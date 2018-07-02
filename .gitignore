@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+.DS_Store
+bin/
+include/
+pip-selfcheck.json
+
 # Distribution / packaging
 .Python
 build/
