@@ -16,8 +16,16 @@
 </ul>
 
 <ul>
-{% for my_sub_item in my_list %}
-    <li>{{ forloop.counter }} - {{ my_sub_item }}</li>
+{% for abc in my_list %}
+    {% if abc == 312 %}
+        <li>{{ forloop.counter }} - {{ abc|add:22 }}</li>
+    {% elif abc == "Abc" %}
+        <li>This is not the network</li>
+    {% else %}
+        <li>{{ forloop.counter }} - {{ abc }}</li>
+    {% endif %}
+    
+    
 {% endfor %}
 </ul>
 
