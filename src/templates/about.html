@@ -3,4 +3,23 @@
 {% block content %}
 <h1>About</h1>
 <p>This is a template</p>
+
+
+<p>
+{{ my_text }}, {{ my_number }}
+{{ my_list }}
+</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<ul>
+{% for my_sub_item in my_list %}
+    <li>{{ forloop.counter }} - {{ my_sub_item }}</li>
+{% endfor %}
+</ul>
+
+
 {% endblock content %}
