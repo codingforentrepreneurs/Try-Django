@@ -4,7 +4,7 @@
 
 
 <form action='.' method='POST'>{% csrf_token %}
-    <input type='text' name='title' placeholder="Your Title"/>
+    {{ form.as_p }}
     <input type='submit' value='Save' />
 </form>
 
