@@ -1,7 +1,5 @@
-
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
-
 from django.views.generic import (
     CreateView,
     DetailView,
@@ -13,6 +11,7 @@ from django.views.generic import (
 
 from .forms import ArticleModelForm
 from .models import Article
+
 
 class ArticleCreateView(CreateView):
     template_name = 'articles/article_create.html'
@@ -61,8 +60,8 @@ class ArticleDeleteView(DeleteView):
         id_ = self.kwargs.get("id")
         return get_object_or_404(Article, id=id_)
 
-    # def get_success_url(self):
-    #     return reverse('articles:article-list')
+    def get_success_url(self):
+        return reverse('articles:article-list')
 
 
 
