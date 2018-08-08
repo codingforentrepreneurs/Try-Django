@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"form",
+				"form_class"
+			],
+			[
+				"Pro",
+				"Product"
+			],
+			[
+				"templa",
+				"template"
+			],
+			[
+				"home",
+				"home_view"
+			],
+			[
 				"posts",
 				"Posts"
 			],
@@ -206,10 +222,6 @@
 			[
 				"is",
 				"is_json"
-			],
-			[
-				"form",
-				"form_data"
 			],
 			[
 				"err",
@@ -502,28 +514,70 @@
 			[
 				"bas",
 				"basil3\tlet"
-			],
-			[
-				"login",
-				"loginUrl"
-			],
-			[
-				"lo",
-				"login"
-			],
-			[
-				"data",
-				"dataId"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/manage.py",
+			"file": "src/courses/views.py",
 			"settings":
 			{
-				"buffer_size": 541,
+				"buffer_size": 1048,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/courses/forms.py",
+			"settings":
+			{
+				"buffer_size": 182,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/courses/templates/courses/course_create.html",
+			"settings":
+			{
+				"buffer_size": 184,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/courses/models.py",
+			"settings":
+			{
+				"buffer_size": 129,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/courses/urls.py",
+			"settings":
+			{
+				"buffer_size": 520,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/courses/templates/courses/course_list.html",
+			"settings":
+			{
+				"buffer_size": 166,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/products/templates/products/product_list.html",
+			"settings":
+			{
+				"buffer_size": 212,
 				"line_ending": "Unix"
 			}
 		}
@@ -539,6 +593,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -605,10 +663,51 @@
 	"expanded_folders":
 	[
 		"/Users/cfe/Dev/trydjango",
-		"/Users/cfe/Dev/trydjango/src"
+		"/Users/cfe/Dev/trydjango/lib",
+		"/Users/cfe/Dev/trydjango/src",
+		"/Users/cfe/Dev/trydjango/src/courses",
+		"/Users/cfe/Dev/trydjango/src/courses/templates",
+		"/Users/cfe/Dev/trydjango/src/courses/templates/courses",
+		"/Users/cfe/Dev/trydjango/src/products",
+		"/Users/cfe/Dev/trydjango/src/products/templates",
+		"/Users/cfe/Dev/trydjango/src/products/templates/products",
+		"/Users/cfe/Dev/trydjango/src/trydjango"
 	],
 	"file_history":
 	[
+		"/Users/cfe/Dev/trydjango/src/courses/form.py",
+		"/Users/cfe/Dev/trydjango/src/courses/templates/courses/course_detail.html",
+		"/Users/cfe/Dev/trydjango/src/courses/urls.py",
+		"/Users/cfe/Dev/trydjango/src/trydjango/settings.py",
+		"/Users/cfe/Dev/trydjango/src/trydjango/urls.py",
+		"/Users/cfe/Dev/trydjango/src/blog/views.py",
+		"/Users/cfe/Dev/trydjango/src/blog/models.py",
+		"/Users/cfe/Dev/trydjango/src/products/views.py",
+		"/Users/cfe/Dev/trydjango/src/blog/templates/articles/article_delete.html",
+		"/Users/cfe/Dev/trydjango/src/blog/urls.py",
+		"/Users/cfe/Dev/trydjango/src/blog/templates/articles/article_list.html",
+		"/Users/cfe/Dev/trydjango/src/blog/templates/articles/article_create.html",
+		"/Users/cfe/Dev/trydjango/src/blog/forms.py",
+		"/Users/cfe/Dev/trydjango/src/blog/templates/articles/article_detail.html",
+		"/Users/cfe/Dev/trydjango/src/products/models.py",
+		"/Users/cfe/Dev/trydjango/src/blog/admin.py",
+		"/Users/cfe/Dev/trydjango/src/products/urls.py",
+		"/Users/cfe/Dev/trydjango/src/products/templates/products/product_create.html",
+		"/Users/cfe/Dev/trydjango/src/products/forms.py",
+		"/Users/cfe/Library/Application Support/Sublime Text 3/Packages/User/MyTheme.sublime-theme",
+		"/Users/cfe/Dev/trydjango/src/products/templates/products/product_detail.html",
+		"/Users/cfe/Dev/trydjango/src/templates/contact.html",
+		"/Users/cfe/Dev/trydjango/src/templates/navbar.html",
+		"/Users/cfe/Dev/trydjango/src/pages/views.py",
+		"/Users/cfe/Dev/trydjango/src/templates/form.html",
+		"/Users/cfe/Dev/trydjango/src/templates/product/detail.html",
+		"/Users/cfe/Dev/trydjango/src/templates/products/product_detail.html",
+		"/Users/cfe/Dev/trydjango/src/templates/home.html",
+		"/Users/cfe/Dev/trydjango/src/templates/about.html",
+		"/Users/cfe/Dev/trydjango/src/templates/base.html",
+		"/Users/cfe/Dev/trydjango/src/products/admin.py",
+		"/Users/cfe/Dev/trydjango/.gitignore",
+		"/Users/cfe/Dev/trydjango/trydjango.sublime-project",
 		"/Volumes/CFE_2018/CFE Projects/Current/Try Reactjs/Artwork/YouTube/description.txt",
 		"/Volumes/CFE_2018/CFE Projects/Current/Try Reactjs/Artwork/YouTube/tags.txt",
 		"/Users/cfe/Dev/try-reactjs/README.md",
@@ -703,44 +802,11 @@
 		"/Users/cfe/Dev/restapi/src/updates/forms.py",
 		"/Users/cfe/Dev/restapi/LICENSE",
 		"/Users/cfe/Dev/restapi/src/updates/api/utils.py",
-		"/Users/cfe/Dev/restapi/src/updates/api/urls.py",
-		"/Users/cfe/Dev/restapi/src/updates/api/mixins.py",
-		"/Users/cfe/Dev/restapi/src/cfeapi/mixins.py",
-		"/Users/cfe/Dev/restapi/lib/python3.6/site-packages/django/http/response.py",
-		"/Users/cfe/Dev/restapi/scripts/api_detail.py",
-		"/Users/cfe/Dev/restapi/src/updates/admin.py",
-		"/Users/cfe/Dev/restapi/src/updates/api/__init__.py",
-		"/Users/cfe/Documents/notes_delete.js",
-		"/Users/cfe/Dropbox/CFE Projects/Blog/Articles/Custom-Analytics-with-Django.md",
-		"/Users/cfe/Desktop/notes_delete/stripe_notes.py",
-		"/Users/cfe/Desktop/notes_delete/code.py",
-		"/Users/cfe/Dev/ecommerce/src/accounts/forms.py",
-		"/Users/cfe/Dev/ecommerce/src/accounts/admin.py",
-		"/Users/cfe/Dev/ecommerce/src/ecommerce/urls.py",
-		"/Users/cfe/Dev/ecommerce/src/ecommerce/settings.py",
-		"/Users/cfe/Dev/ecommerce/src/accounts/models.py",
-		"/Users/cfe/Dev/ecommerce/src/accounts/views.py",
-		"/Users/cfe/Dev/ecommerce/README.md",
-		"/Users/cfe/Dev/ecommerce/parsed_log.md",
-		"/Users/cfe/Dev/ecommerce/notes/checkout_process.md",
-		"/Users/cfe/Dev/ecommerce/src/ecommerce/utils.py",
-		"/Users/cfe/Dev/ecommerce/src/addresses/admin.py",
-		"/Users/cfe/Dev/ecommerce/src/addresses/forms.py",
-		"/Users/cfe/Dev/ecommerce/src/addresses/models.py",
-		"/Users/cfe/Dev/ecommerce/src/billing/models.py",
-		"/Users/cfe/Dev/ecommerce/src/addresses/templates/addresses/form.html",
-		"/Users/cfe/Dev/ecommerce/src/addresses/views.py",
-		"/Users/cfe/Dev/ecommerce/src/orders/models.py",
-		"/Users/cfe/Dev/ecommerce/src/addresses/templates/addresses/prev_addresses.html",
-		"/Users/cfe/Dev/ecommerce/src/carts/templates/carts/checkout.html",
-		"/Users/cfe/Dev/ecommerce/src/carts/templates/carts/checkout-done.html",
-		"/Users/cfe/Dev/ecommerce/src/carts/urls.py",
-		"/Users/cfe/Dev/ecommerce/parse_git_log.py",
-		"/Users/cfe/Dev/ecommerce/src/carts/views.py"
+		"/Users/cfe/Dev/restapi/src/updates/api/urls.py"
 	],
 	"find":
 	{
-		"height": 80.0
+		"height": 57.0
 	},
 	"find_in_files":
 	{
@@ -771,37 +837,203 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/manage.py",
-					"semi_transient": true,
+					"file": "src/courses/views.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 541,
+						"buffer_size": 1048,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								378,
-								378
+								162,
+								148
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 63.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/courses/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								55
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/courses/templates/courses/course_create.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								184
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/courses/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/courses/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/courses/templates/courses/course_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/products/templates/products/product_list.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
