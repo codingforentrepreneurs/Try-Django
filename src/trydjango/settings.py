@@ -16,6 +16,9 @@ p@ssw0rd
 
 """
 Use 'python manage.py migrate' to sync settings onto the apps of this project.
+
+To create apps you should use 'python manage.py startapp <appname>'.
+Each app can do everything by itself but design-wise you create multiple apps that each do one thing very well. The apps in this case are the folders: blog, courses, pages, and products.
 """
 
 import os
@@ -51,8 +54,8 @@ INSTALLED_APPS = [ # More like Components that are little pieces of a greater pr
     # include your own apps here
     'blog',
     'courses',
-    'pages',
-    'products',
+    'pages', # This is to set an app that will deal with the webpages.
+    'products', # Refer to 'products/admin.py'. Always 'python manage.py makemigration' since you are now messing with the DB. To implement you DB you have type 'python manage.py migrate' after. Go back to 'products/models.py' to learn about adding records with python shell.
 ]
 
 MIDDLEWARE = [
