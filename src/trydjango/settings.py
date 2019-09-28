@@ -8,6 +8,17 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
+
+SuperUser:
+Admin
+p@ssw0rd
+"""
+
+"""
+Use 'python manage.py migrate' to sync settings onto the apps of this project.
+
+To create apps you should use 'python manage.py startapp <appname>'.
+Each app can do everything by itself but design-wise you create multiple apps that each do one thing very well. The apps in this case are the folders: blog, courses, pages, and products.
 """
 
 import os
@@ -30,7 +41,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = [ # More like Components that are little pieces of a greater project.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,11 +51,11 @@ INSTALLED_APPS = [
 
     # third party
 
-    # own
+    # include your own apps here
     'blog',
     'courses',
-    'pages',
-    'products',
+    'pages', # This is to set an app that will deal with the webpages.
+    'products', # Refer to 'products/admin.py'. Always 'python manage.py makemigration' since you are now messing with the DB. To implement you DB you have type 'python manage.py migrate' after. Go back to 'products/models.py' to learn about adding records with python shell.
 ]
 
 MIDDLEWARE = [
@@ -57,7 +68,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'trydjango.urls'
+ROOT_URLCONF = 'trydjango.urls' # How Django knows to route any given URLs.
 
 TEMPLATES = [
     {
@@ -75,7 +86,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'trydjango.wsgi.application'
+WSGI_APPLICATION = 'trydjango.wsgi.application' # This is how your server works. It goes though this setting. Some cases you change it and in others you leave it alone.
 
 
 # Database
@@ -83,8 +94,9 @@ WSGI_APPLICATION = 'trydjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.sqlite3', # Change where .sqlite3 is to change different Database Management System.
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), # Must also place location of new DBMS. Check documentation.
+        # Fun fact--> 'NAME': os.path.join(BASE_DIR, 'db2.sqlite3'), --> will create another DB called db2.sqlite3 next to db.sqlite3. You have to type 'python manage.py migrate' to implement though. You should do that every time you change the settings of 'settings.py' or DB Models which will be discussed later.
     }
 }
 
@@ -92,7 +104,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
+AUTH_PASSWORD_VALIDATORS = [ # Validates passwords to current standard.
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
@@ -126,3 +138,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
