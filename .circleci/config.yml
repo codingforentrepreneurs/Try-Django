@@ -41,6 +41,9 @@ jobs:
           path: test_results
       - store_artifacts:
           path: test_artifacts
+  test-variable:
+    steps:
+      - echo $PRACTICE_VARIABLE
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
