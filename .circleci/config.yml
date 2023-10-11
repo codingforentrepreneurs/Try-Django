@@ -43,7 +43,7 @@ jobs:
           path: test_artifacts
   test-variable:
     steps:
-      - echo $PRACTICE_VARIABLE
+      - run: echo $PRACTICE_VARIABLE
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
@@ -52,3 +52,9 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - build-and-test
+
+  test-variable-workflow:
+    jobs:
+      - test-variable:
+          context:
+            - practice_context
