@@ -42,6 +42,8 @@ jobs:
       - store_artifacts:
           path: test_artifacts
   test-variable:
+    docker:
+      - image: cimg/base:stable
     steps:
       - run: echo $PRACTICE_VARIABLE
 
