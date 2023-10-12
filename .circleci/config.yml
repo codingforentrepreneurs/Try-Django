@@ -46,6 +46,15 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run: echo $PRACTICE_VARIABLE
+  build-docker-image:
+    docker:
+      -image: cimg/base:stable
+    steps:
+      - checkout
+      - run: |
+          echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
+          docker build -t hokiau/trydjango:$CIRCLE_BRANCH .
+      - run: docker push hokiau/trydjango:$CIRCLE_BRANCH
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
@@ -60,3 +69,9 @@ workflows:
       - test-variable:
           context:
             - practice_context
+
+  build-publish-docker-image:
+    jobs:
+      - build-docker-image:
+          context:
+            - dockerhub
