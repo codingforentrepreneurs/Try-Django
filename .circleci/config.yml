@@ -51,10 +51,10 @@ jobs:
       -image: cimg/base:stable
     steps:
       - checkout
+      - run: docker build -t hokiau/trydjango:$CIRCLE_BRANCH .
       - run: |
           echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
-          docker build -t hokiau/trydjango:$CIRCLE_BRANCH .
-      - run: docker push hokiau/trydjango:$CIRCLE_BRANCH
+          docker push hokiau/trydjango:$CIRCLE_BRANCH
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
