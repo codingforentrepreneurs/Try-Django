@@ -49,6 +49,7 @@ jobs:
   build-docker-image:
     machine:
       image: ubuntu-2204:2022.04.2
+      docker_layer_caching: true
     steps:
       - checkout
       - run: docker build -t hokiau/trydjango:$CIRCLE_BRANCH .
