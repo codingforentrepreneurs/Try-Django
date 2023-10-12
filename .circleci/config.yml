@@ -48,7 +48,7 @@ jobs:
       - run: echo $PRACTICE_VARIABLE
   build-docker-image:
     docker:
-      -image: cimg/base:stable
+      - image: cimg/base:stable
     steps:
       - checkout
       - run: docker build -t hokiau/trydjango:$CIRCLE_BRANCH .
